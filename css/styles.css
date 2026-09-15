@@ -22,7 +22,7 @@ p{font-size:calc(2px + 1.5vw);}
 a{font-size:calc(2px + 2vw);}
 
 header{
-    background-color: green;
+    background-color: #006199;
     padding-left:2vh;
 }
 
@@ -36,7 +36,7 @@ div #wrap{
 
 
 nav{
-    background-color:grey;
+    background-color:#8ACFF8;
     width:30%;
 }
 
@@ -60,7 +60,7 @@ nav a{
 
 main{
     width:70%;
-    background-color:yellow;
+    background-color:#F4EB6C;
     padding:1%;
 }
 
@@ -69,7 +69,7 @@ main img{
 }
 
 footer{
-    background-color:green;
+    background-color:#FFD444;
 }
 
 
