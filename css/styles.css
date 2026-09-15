@@ -1,22 +1,30 @@
 *{
-    margin:0 2%;
+    margin:0;
     box-sizing:border-box; /* fix padding collapsing issues*/
+}
 
+#page-wrapper{
+    width:80%;
+    margin:auto; /*Squeeze Page*/
 }
 
 main{
-    height:100vh;
+    height:100vh; /* make main fill the entire page regardless of what */
+    background-color: yellow;
+    padding:0;
 }
 
+
+
 h1{
-    font-size:calc(3px + 2vw);
+    font-size:calc(3px + 3vw);
 }
 h3{
     font-size:calc(3px + 2vw);
 }
 
 p{
-    font-size:calc(3px + 2vw);
+    font-size:calc(3px + 1.5vw);
 }
 
 
@@ -26,27 +34,29 @@ img{
     max-width:50%;
 }
 
+header{
+}
+
 nav{
     background-color:grey;
+    height:100%;
 }
 
 nav ul{
     padding:0; /* removes left padding that is in every ul by default*/
     list-style:none; /* removes bullets from list*/
-    margin:0;
 }
 
 
 
 nav li{
-    margin:0;
 }
 
 nav a{
     text-decoration:none; /* removes the underline from elements*/
     color: black;
-
 }
+
 header{
     background-color: green;
 }
@@ -55,7 +65,7 @@ header{
 @media screen and (max-width: 750px){
     nav li{
         display:inline; /* forces each li element to be inline*/
-        padding: 2px; /* prevent links from getting too close to each other*/
+        padding: 0.5vw; /* prevent links from getting too close to each other*/
         margin:auto;
     }
     header{
@@ -66,7 +76,6 @@ header{
 
     a{
         font-size:calc(3vw);
-        margin:0;
     }
     nav ul{
         width:100%;
@@ -75,29 +84,53 @@ header{
 
 }
 @media screen and (min-width: 750px){
-    nav li{
-        padding: 2px;
+
+    div #wrap{
+        display: flex;
+        flex-direction: row; /*What is this?*/
+        width:100%;
     }
 
-    nav ul{
-        display:inline;
+    main{
+        width:70%;
     }
 
     nav{
         height:100%;
+        background-color:grey;
         max-width:30%;
+        width:30%;
+    }
+
+    nav ul{
+        padding:0;
         display:inline;
     }
+
+    nav li{
+    }
+
+    nav li a{
+        padding: 8px 16px;
+    }
+
 
 
     header{
     }
-    main{
-        display:inline;
-        padding-left:80px;
-    }
+
+
     main img{
         display:inline;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1000px){
+    main{
+        width:100%;
     }
 }
 
@@ -106,12 +139,5 @@ header{
 
     main{
         max-width:70%;
-        margin:0 0 0 30%;
-    }
-}
-
-@media screen and (max-width: 1000px){
-    main{
-        width:100%;
     }
 }
