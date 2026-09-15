@@ -1,61 +1,112 @@
-body{
-    display:flex;
-    flex-wrap:wrap;
+*{
+    margin:0 2%;
+    box-sizing:border-box; /* fix padding collapsing issues*/
 
 }
 
-nav{
-    background-color:beige;
-    ul{
+main{
+    height:100vh;
+}
 
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        line-height: 30px;
-    }
-    li a{
-        border-style:groove;
-        border-color:brown;
-        border-width: 3px;
-        color:red;
-        margin: 0px 0px;
-    }
+h1{
+    font-size:calc(3px + 2vw);
+}
+h3{
+    font-size:calc(3px + 2vw);
+}
 
+p{
+    font-size:calc(3px + 2vw);
 }
 
 
-@media screen and (min-width:750px) {
+
+
+img{
+    max-width:50%;
+}
+
+nav ul{
+    padding:0; /* removes left padding that is in every ul by default*/
+    list-style:none; /* removes bullets from list*/
+    margin:0;
+    background-color:grey;
+}
+
+
+
+nav li{
+    margin:0;
+}
+
+nav a{
+    text-decoration:none; /* removes the underline from elements*/
+    color: black;
+
+}
+header{
+    background-color: green;
+}
+
+
+@media screen and (max-width: 750px){
+    nav li{
+        display:inline; /* forces each li element to be inline*/
+        padding: 2px; /* prevent links from getting too close to each other*/
+        margin:auto;
+    }
+    header{
+        text-align:center;
+    }
+    main{
+    }
+
+    a{
+        font-size:calc(3vw);
+        margin:0;
+    }
+    nav ul{
+        width:100%;
+    }
+
+}
+@media screen and (min-width: 750px){
+    nav li{
+        padding: 2px;
+    }
+
+    nav ul{
+        display:inline;
+    }
+
     nav{
-        max-width: 30%;
-        ul{
-            li a{
-                
-            }
-        }
-
-    }
-}
-@media screen and (max-width:750px) {
-    nav{
-        ul{
-            align-self: center; 
-            display:flex;
-            justify-content: space-around;
-            li a{
-                float:left;
-                text-align:center;
-                margin: 0px 0px;
-                font-size:2.5vw;
-                padding:0 2.4vw;
-                box-sizing: border-box;
-
-            }
-        }
-        max-width: 100%;
+        position:fixed; /*makes the list sticky on vertical*/
+        height:100%;
+        display:inline;
     }
 
-    
+
+    header{
+    }
+    main{
+        display:inline;
+        padding-left:80px;
+    }
+    main img{
+        display:inline;
+    }
 }
 
 
+@media screen and (min-width: 1000px){
 
+    main{
+        max-width:70%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    main{
+        width:100%;
+    }
+}
