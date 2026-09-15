@@ -26,11 +26,14 @@ img{
     max-width:50%;
 }
 
+nav{
+    background-color:grey;
+}
+
 nav ul{
     padding:0; /* removes left padding that is in every ul by default*/
     list-style:none; /* removes bullets from list*/
     margin:0;
-    background-color:grey;
 }
 
 
@@ -81,8 +84,8 @@ header{
     }
 
     nav{
-        position:fixed; /*makes the list sticky on vertical*/
         height:100%;
+        max-width:30%;
         display:inline;
     }
 
@@ -103,6 +106,7 @@ header{
 
     main{
         max-width:70%;
+        margin:0 0 0 30%;
     }
 }
 
