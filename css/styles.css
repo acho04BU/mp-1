@@ -8,49 +8,67 @@
     margin:auto; /*Squeeze Page*/
 }
 
+
+div #wrap{
+    display: flex;
+    flex-direction: row; /*What is this?*/
+    width:100%;
+    height:100vh; /* sets height of entire div to the full page*/
+}
+
 main{
-    height:100vh; /* make main fill the entire page regardless of what */
-    background-color: yellow;
-    padding:0;
+    width:70%;
+    background-color:yellow;
+    text-align: center;
+    padding:1%;
 }
 
 
+
+nav{
+    background-color:grey;
+    width:30%;
+}
 
 h1{
-    font-size:calc(3px + 3vw);
+    font-size:calc(2px + 3vw);
 }
 h3{
-    font-size:calc(3px + 2vw);
+    font-size:calc(2px + 2vw);
 }
 
 p{
-    font-size:calc(3px + 1.5vw);
+    font-size:calc(2px + 1.5vw);
 }
 
+
+a{
+    font-size:calc(2px + 2vw);
+}
 
 
 
 img{
     max-width:50%;
+    display:inline;
 }
 
-header{
-}
-
-nav{
-    background-color:grey;
-    height:100%;
+header,footer{
+    background-color:green;
 }
 
 nav ul{
-    padding:0; /* removes left padding that is in every ul by default*/
+    padding-left:0; /* removes left padding that is in every ul by default*/
     list-style:none; /* removes bullets from list*/
+    display:flex; /* allow elements to be justified in nav li*/
+    flex-direction: column;
 }
-
-
 
 nav li{
+    text-align:center; /* aligns nav bar text to center*/
+    margin: 15%; /* spread out li tags */
 }
+
 
 nav a{
     text-decoration:none; /* removes the underline from elements*/
@@ -59,85 +77,42 @@ nav a{
 
 header{
     background-color: green;
+    padding-left:2vh;
 }
 
 
 @media screen and (max-width: 750px){
-    nav li{
-        display:inline; /* forces each li element to be inline*/
-        padding: 0.5vw; /* prevent links from getting too close to each other*/
-        margin:auto;
-    }
-    header{
-        text-align:center;
-    }
-    main{
-    }
+    #page-wrapper{
 
-    a{
-        font-size:calc(3vw);
     }
-    nav ul{
-        width:100%;
-        text-align:center;
-    }
-
-}
-@media screen and (min-width: 750px){
 
     div #wrap{
-        display: flex;
-        flex-direction: row; /*What is this?*/
-        width:100%;
+        flex-direction: column;
     }
-
-    main{
-        width:70%;
-    }
-
     nav{
-        height:100%;
-        background-color:grey;
-        max-width:30%;
-        width:30%;
+        width: 100%;
     }
-
     nav ul{
-        padding:0;
-        display:inline;
+        flex-direction: row;
+        justify-content: center;
     }
 
-    nav li{
+    nav a{
     }
 
-    nav li a{
-        padding: 8px 16px;
-    }
-
-
-
-    header{
-    }
-
-
-    main img{
-        display:inline;
-    }
-}
-
-
-
-
-@media screen and (max-width: 1000px){
     main{
         width:100%;
     }
-}
-
-
-@media screen and (min-width: 1000px){
-
-    main{
-        max-width:70%;
+    main *{
+        margin: 10%;
     }
+    nav li{
+        margin:1%;
+    }
+    header{
+        text-align:center;
+    }
+
+
 }
+
