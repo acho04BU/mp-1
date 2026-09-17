@@ -62,7 +62,7 @@ function power(){
     }
 }
 
-function clear(){
+function clearinput(){
     console.log("AHHHHHHHH");
     //reset from stack overflow: https://stackoverflow.com/questions/17237772/html-how-to-clear-input-using-javascript
     document.getElementById("first-input").value = '';
