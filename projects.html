@@ -22,21 +22,23 @@
                         <li><a href="projects.html">Projects</a></li>
                     </ul>
                 </nav>
-                <main id="project-main">
-                    <div id = "calc-wrapper">
-                        <div id="input-wrapper">
-                            <label for="first-input"></label><input id="first-input"/>
-                            <label for="second-input"></label><input id="second-input"/>
+                <main>
+                    <div id = "helmet-wrapper">
+                        <div id = "calc-wrapper">
+                            <div id="input-wrapper">
+                                <label for="first-input"></label><input id="first-input"/>
+                                <label for="second-input"></label><input id="second-input"/>
+                            </div>
+                            <div id="buttons-wrapper">
+                                <button onclick="addition()">+</button>
+                                <button onclick="subtraction()">-</button>
+                                <button onclick="multiplication()">*</button>
+                                <button onclick="division()">/</button>
+                                <button onclick="power()">**</button>
+                                <button onclick="clearInput()">clear</button>
+                            </div>
+                            <p id="output"></p>
                         </div>
-                        <div id="buttons-wrapper">
-                            <button onclick="addition()">+</button>
-                            <button onclick="subtraction()">-</button>
-                            <button onclick="multiplication()">*</button>
-                            <button onclick="division()">/</button>
-                            <button onclick="power()">**</button>
-                            <button onclick="clearInput()">clear</button>
-                        </div>
-                        <p id="output"></p>
                     </div>
                 </main>
             </div>
