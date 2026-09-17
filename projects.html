@@ -23,12 +23,23 @@
                     </ul>
                 </nav>
                 <main>
-
+                    <div id = "calcWrapper">
+                        <label for="first-input"></label><input id="first-input"/>
+                        <label for="second-input"></label><input id="second-input"/>
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">**</button>
+                        <button onclick="clear()">clear</button>
+                        <p id="output"></p>
+                    </div>
                 </main>
             </div>
             <footer>
                 <p>All rights reserved by Alex Cho <a href="">Credits</a> &#169;</p>
             </footer>
         </div>
+        <script src="project.js"></script>
     </body>
 </html>
