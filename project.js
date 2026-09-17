@@ -62,7 +62,7 @@ function power(){
     }
 }
 
-function clearinput(){
+function clearInput(){
     firstInput.value = '';
     secondInput.value= '';
     output.innerHTML = '';
