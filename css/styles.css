@@ -49,7 +49,7 @@ nav ul{
 
 nav li{
     text-align:center; /* aligns nav bar text to center*/
-    margin: 15%; /* spread out li tags */
+    margin: 3vh; /* spread out li tags */
 }
 
 
@@ -89,12 +89,14 @@ footer{
 
 div #helmet-wrapper{
     background-color:red;
-    padding:10%;
+    padding:5% 5%;
+    margin:5% 25%;
 }
 
 div #calc-wrapper{
     text-align:center;
-    background-color:#F4EB6C;
+    background-color:gold;
+    padding: 5% 2% 15% 2%;
 }
 
 div #input-wrapper{
@@ -107,7 +109,14 @@ input {
 }
 
 div #buttons-wrapper{
+}
 
+p #output{
+
+}
+
+#aligner{
+    text-align:center;
 }
 
 @media screen and (max-width: 750px){
