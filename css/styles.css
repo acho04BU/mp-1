@@ -15,11 +15,14 @@
     font-family: montserrat; /* set name of font */
     src: url(../src/Montserrat-Regular.ttf); /* location of the font file */
 }
-h1,h3,p,a{font-family:montserrat, monospace;}
+h1,h3,h4,h5,p,a{font-family:montserrat, monospace;}
 h1{font-size:calc(2px + 3vw);}
 h3{font-size:calc(2px + 2vw);}
+h4{font-size:calc(2px + 1.4vw);}
+h5{font-size:calc(2px + 1.2vw);}
 p{font-size:calc(2px + 1.5vw);}
 a{font-size:calc(2px + 2vw);}
+#in-h4{font-size:calc(2px + 1.4vw);}
 button{font-size:calc(2px + 1vw);}
 
 
