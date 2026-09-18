@@ -35,7 +35,7 @@ div #wrap{
     display: flex;
     flex-direction: row; /*Determines direction of wrapping, meaning that elements will wrap next to each other with row*/
     width:100%;
-    height:100vh; /* sets height of entire div to the full page*/
+    height:160vh; /* sets height of entire div to the full page*/
 }
 
 
@@ -91,6 +91,7 @@ main img{
 
 footer{
     background-color:#FFD444;
+    position:static;
 }
 
 
